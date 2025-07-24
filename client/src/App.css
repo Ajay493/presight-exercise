@@ -1,0 +1,58 @@
+/* Reset basic margin and padding for the root element */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* General styles for the document */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scrollbar from showing outside the app */
+}
+
+/* Style for the logo */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+/* React logo specific hover effect */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animation for logo spinning */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation for reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card styles */
+.card {
+  padding: 2em;
+}
+
+/* Style for read-the-docs link */
+.read-the-docs {
+  color: #888;
+}
